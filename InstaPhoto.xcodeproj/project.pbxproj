@@ -24,6 +24,13 @@
 		274346F7173DBBDA00CF6885 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274346CF173DBBDA00CF6885 /* Foundation.framework */; };
 		274346FF173DBBDA00CF6885 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 274346FD173DBBDA00CF6885 /* InfoPlist.strings */; };
 		27434702173DBBDA00CF6885 /* InstaPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27434701173DBBDA00CF6885 /* InstaPhotoTests.m */; };
+		27434715173DC59B00CF6885 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27434714173DC59B00CF6885 /* CoreFoundation.framework */; };
+		27434722173DC63E00CF6885 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27434721173DC63E00CF6885 /* FeedViewController.m */; };
+		27434725173DC77400CF6885 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27434724173DC77400CF6885 /* FavoritesViewController.m */; };
+		27434728173DC7C400CF6885 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27434727173DC7C300CF6885 /* ProfileViewController.m */; };
+		2743472B173DCAB500CF6885 /* pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2743472A173DCAB500CF6885 /* pic.jpg */; };
+		2743472D173DCCBF00CF6885 /* seed.png in Resources */ = {isa = PBXBuildFile; fileRef = 2743472C173DCCBF00CF6885 /* seed.png */; };
+		2743472F173DCFFD00CF6885 /* Jetpack_Seed.png in Resources */ = {isa = PBXBuildFile; fileRef = 2743472E173DCFFD00CF6885 /* Jetpack_Seed.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,17 @@
 		274346FE173DBBDA00CF6885 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27434700173DBBDA00CF6885 /* InstaPhotoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaPhotoTests.h; sourceTree = "<group>"; };
 		27434701173DBBDA00CF6885 /* InstaPhotoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaPhotoTests.m; sourceTree = "<group>"; };
+		27434713173DC59B00CF6885 /* tmp.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tmp.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		27434714173DC59B00CF6885 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		27434720173DC63E00CF6885 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedViewController.h; path = ../FeedViewController.h; sourceTree = "<group>"; };
+		27434721173DC63E00CF6885 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedViewController.m; path = ../FeedViewController.m; sourceTree = "<group>"; };
+		27434723173DC77400CF6885 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		27434724173DC77400CF6885 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		27434726173DC7C300CF6885 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		27434727173DC7C300CF6885 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		2743472A173DCAB500CF6885 /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pic.jpg; path = ../../../Downloads/pic.jpg; sourceTree = "<group>"; };
+		2743472C173DCCBF00CF6885 /* seed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = seed.png; path = ../../../Downloads/seed.png; sourceTree = "<group>"; };
+		2743472E173DCFFD00CF6885 /* Jetpack_Seed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Jetpack_Seed.png; path = ../../../Downloads/Jetpack_Seed.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +101,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27434710173DC59B00CF6885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27434715173DC59B00CF6885 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,6 +127,7 @@
 			children = (
 				274346CA173DBBDA00CF6885 /* InstaPhoto.app */,
 				274346F3173DBBDA00CF6885 /* InstaPhotoTests.octest */,
+				27434713173DC59B00CF6885 /* tmp.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +139,7 @@
 				274346CF173DBBDA00CF6885 /* Foundation.framework */,
 				274346D1173DBBDA00CF6885 /* CoreGraphics.framework */,
 				274346F4173DBBDA00CF6885 /* SenTestingKit.framework */,
+				27434714173DC59B00CF6885 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +147,13 @@
 		274346D3173DBBDA00CF6885 /* InstaPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				27434729173DCA8200CF6885 /* images */,
+				27434720173DC63E00CF6885 /* FeedViewController.h */,
+				27434721173DC63E00CF6885 /* FeedViewController.m */,
+				27434723173DC77400CF6885 /* FavoritesViewController.h */,
+				27434724173DC77400CF6885 /* FavoritesViewController.m */,
+				27434726173DC7C300CF6885 /* ProfileViewController.h */,
+				27434727173DC7C300CF6885 /* ProfileViewController.m */,
 				274346DC173DBBDA00CF6885 /* AppDelegate.h */,
 				274346DD173DBBDA00CF6885 /* AppDelegate.m */,
 				274346E5173DBBDA00CF6885 /* MainStoryboard_iPhone.storyboard */,
@@ -163,6 +198,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		27434729173DCA8200CF6885 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2743472E173DCFFD00CF6885 /* Jetpack_Seed.png */,
+				2743472C173DCCBF00CF6885 /* seed.png */,
+				2743472A173DCAB500CF6885 /* pic.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,6 +247,23 @@
 			productReference = 274346F3173DBBDA00CF6885 /* InstaPhotoTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		27434712173DC59B00CF6885 /* tmp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2743471D173DC59B00CF6885 /* Build configuration list for PBXNativeTarget "tmp" */;
+			buildPhases = (
+				2743470F173DC59B00CF6885 /* Sources */,
+				27434710173DC59B00CF6885 /* Frameworks */,
+				27434711173DC59B00CF6885 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tmp;
+			productName = tmp;
+			productReference = 27434713173DC59B00CF6885 /* tmp.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -225,6 +287,7 @@
 			targets = (
 				274346C9173DBBDA00CF6885 /* InstaPhoto */,
 				274346F2173DBBDA00CF6885 /* InstaPhotoTests */,
+				27434712173DC59B00CF6885 /* tmp */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +303,9 @@
 				274346E4173DBBDA00CF6885 /* Default-568h@2x.png in Resources */,
 				274346E7173DBBDA00CF6885 /* MainStoryboard_iPhone.storyboard in Resources */,
 				274346EA173DBBDA00CF6885 /* MainStoryboard_iPad.storyboard in Resources */,
+				2743472B173DCAB500CF6885 /* pic.jpg in Resources */,
+				2743472D173DCCBF00CF6885 /* seed.png in Resources */,
+				2743472F173DCFFD00CF6885 /* Jetpack_Seed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +314,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				274346FF173DBBDA00CF6885 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27434711173DC59B00CF6885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +350,9 @@
 				274346DA173DBBDA00CF6885 /* main.m in Sources */,
 				274346DE173DBBDA00CF6885 /* AppDelegate.m in Sources */,
 				274346ED173DBBDA00CF6885 /* ViewController.m in Sources */,
+				27434722173DC63E00CF6885 /* FeedViewController.m in Sources */,
+				27434725173DC77400CF6885 /* FavoritesViewController.m in Sources */,
+				27434728173DC7C400CF6885 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +361,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				27434702173DBBDA00CF6885 /* InstaPhotoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2743470F173DC59B00CF6885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +531,43 @@
 			};
 			name = Release;
 		};
+		2743471E173DC59B00CF6885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tmp/tmp-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "tmp/tmp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2743471F173DC59B00CF6885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tmp/tmp-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "tmp/tmp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -473,6 +593,14 @@
 			buildConfigurations = (
 				27434709173DBBDA00CF6885 /* Debug */,
 				2743470A173DBBDA00CF6885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2743471D173DC59B00CF6885 /* Build configuration list for PBXNativeTarget "tmp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2743471E173DC59B00CF6885 /* Debug */,
+				2743471F173DC59B00CF6885 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

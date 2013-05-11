@@ -7,12 +7,41 @@
 //
 
 #import "AppDelegate.h"
+#import "FeedViewController.h"
+#import "FavoritesViewController.h"
+#import "ProfileViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    CGRect viewRect = [[UIScreen mainScreen] bounds];
+    //create window - our canvas
+    self.window = [[UIWindow alloc] initWithFrame:viewRect];
+    [self.window makeKeyAndVisible];
+    
+    //init feed VC
+    FeedViewController *feedVC = [[FeedViewController alloc]init];
+    UINavigationController *feedNavController = [[UINavigationController alloc] initWithRootViewController:feedVC];
+    
+    //favorite VC
+    FavoritesViewController *favoriteVC = [[FavoritesViewController alloc] init];
+    UINavigationController *favoriteNavController = [[UINavigationController alloc] initWithRootViewController:favoriteVC];
+    
+    //profile VC
+    ProfileViewController * profileVC = [[ProfileViewController alloc ] init];
+    UINavigationController *profileNavController = [[UINavigationController alloc] initWithRootViewController:profileVC];
+    
+    //init the tab scoller
+    UITabBarController * tabBarController  =[[UITabBarController alloc] init];
+    [tabBarController setViewControllers:@[feedNavController,favoriteNavController,profileNavController ]];
+    
+    //nav control scroller
+    
+    
+    self.window.rootViewController = tabBarController;
+    
     return YES;
 }
 							

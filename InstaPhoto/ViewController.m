@@ -14,6 +14,15 @@
 
 @implementation ViewController
 
+- (void)loadView{
+    // called the first time view property is accessed
+    CGRect viewRect = [[UIScreen mainScreen] bounds];
+    //NSLog(@"Our screen is %f x %f",viewRect.size.height,viewRect.size.width);
+    
+    UIView *colorView = [[UIView alloc] initWithFrame:viewRect];
+    self.view  = colorView;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
